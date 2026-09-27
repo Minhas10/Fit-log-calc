@@ -1,9 +1,10 @@
 import React from "react";
 import  Image from 'next/image';
+import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="border-b border-white/5 bg-[#0d0e10] text-white">
+    <nav className="border-b border-white/5 bg-[#0d0e10] text-white container mx-auto">
       <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-6">
 
         {/* Logo */}
@@ -19,14 +20,14 @@ const Navbar = () => {
 
         {/* Center Navigation */}
         <div className="flex items-center gap-2">
-          <a
-            href="#"
+          <a 
+            href="#library"
             className="rounded-full bg-[#1d2d0d] px-5 py-2 text-sm font-semibold text-lime-400"
           >
             Workouts
-          </a>
+          </a >
 
-          <a
+        <a
             href="#"
             className="rounded-full px-5 py-2 text-sm text-gray-400 transition hover:text-white"
           >

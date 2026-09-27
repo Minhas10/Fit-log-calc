@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Banner = () => {
   return (
-    <section className="px-4 py-6">
+    <section className=" container mx-auto px-4 py-6">
       <div className="mx-auto max-w-7xl overflow-hidden rounded-2xl border border-white/10 bg-[#15171c]">
 
         <div className="grid grid-cols-1 items-center lg:grid-cols-2">
@@ -22,12 +23,17 @@ const Banner = () => {
 
             <p className="mt-6 max-w-xl text-sm leading-6 text-gray-400 sm:text-base lg:text-lg lg:leading-7">
               Fitlog is a dark, no-nonsense gym companion: pick a lift,
-              lock it into today's plan, and watch the week's work add up.
+              lock it into today&apos;s plan, and watch the week&apos;s work add up.
             </p>
-
-            <button className="mt-7 rounded-lg bg-lime-400 px-6 py-3 text-sm font-bold uppercase text-black transition hover:bg-lime-300 sm:px-7 sm:py-4">
+            <a
+              href="#library"
+              className="mt-7 inline-block rounded-lg bg-lime-400 px-6 py-3 text-sm font-bold uppercase text-black transition hover:bg-lime-300 sm:px-7 sm:py-4"
+            >
               Browse Workouts
-            </button>
+            </a>
+            <section id="library">
+              
+            </section>
 
           </div>
 
@@ -47,7 +53,7 @@ const Banner = () => {
 
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 
