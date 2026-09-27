@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ExerciseCard = ({ exercise }) => {
     return (
-        <Link href={`/workoutsLibrary/${exercise.id}`}>
+        <Link href={`/workLibrary/${exercise.id}`}>
 
             <article className="overflow-hidden rounded-3xl border border-white/10 bg-[#15171c] text-white transition duration-300 hover:-translate-y-1 hover:border-lime-400/40">
 
